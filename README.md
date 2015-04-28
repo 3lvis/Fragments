@@ -1,6 +1,6 @@
 # Tailor
 
-`.addSubview()` R.I.P.
+`self.addSubview()` R.I.P.
 
 ## Author
 
