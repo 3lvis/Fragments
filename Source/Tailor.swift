@@ -1,10 +1,10 @@
 import UIKit
 
 class Tailor : UIViewController {
-  let JSON: [String : AnyObject]
+  let data: Data
 
-  init(JSON: [String : AnyObject]) {
-    self.JSON = JSON
+  init(pieces: [[String : AnyObject]], styles: [[String : AnyObject]]) {
+    data = Data(piecesJSON: pieces, stylesJSON: styles)
 
     super.init(nibName: nil, bundle: nil)
   }
