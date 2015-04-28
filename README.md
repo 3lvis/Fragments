@@ -4,6 +4,19 @@ Tailor is a modern way of declaring read-only UI. It uses a declarative paradigm
 
 Tailor is great for creating detail views, every `subview` is a `piece`, you can make very complex detail views by combining all kinds of `pieces`.
 
+`Piece` types:
+
+- Text
+- Image
+- Slideshow
+- Phone number (pressing makes a call)
+- Address (pressing opens directions)
+- Email (pressing opens email composer)
+- Map
+- Link
+- Separator
+- Custom
+
 ## Author
 
 Elvis Nuñez, elvisnunez@me.com
