@@ -15,6 +15,7 @@ Tailor is great for creating detail views, every `subview` is a `piece`, you can
 - Map
 - Link
 - Separator
+- Share
 - Custom
 
 ## Author
