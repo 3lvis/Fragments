@@ -1,9 +1,22 @@
 import Foundation
+import UIKit
 
 extension Tailor {
+  struct Style {
+    let id: String
+    let font: UIFont?
+
+    init(JSON: [String : AnyObject]) {
+      id = JSON["id"] as! String
+      let fontString = JSON["font"] as! String
+      let fontSize = JSON["font_size"] as! CGFloat
+      font = UIFont(name: fontString, size: fontSize)!
+    }
+  }
+
   struct Piece {
     let content: String
-    let style: String
+    let styleID: String
     let type: Type
 
     enum Type {
@@ -19,27 +32,16 @@ extension Tailor {
       }
 
       content = JSON["content"] as! String
-      style = JSON["style"] as! String
-    }
-  }
-
-  struct Style {
-    let id: String
-    let font: String
-    let fontSize: Float
-
-    init(JSON: [String : AnyObject]) {
-      id = JSON["id"] as! String
-      font = JSON["font"] as! String
-      fontSize = JSON["font_size"] as! Float
+      styleID = JSON["style_id"] as! String
     }
   }
 
   struct Data {
-    let pieces: [Piece]
-    let styles: [[String : AnyObject]]
+//    let pieces: [Piece]
+//    let styles: [[String : AnyObject]]
 
     init(piecesJSON: [[String : AnyObject]], stylesJSON: [[String : AnyObject]]) {
+
     }
   }
 }
