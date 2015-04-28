@@ -8,15 +8,16 @@ Tailor is great for creating detail views, every `subview` is a `piece`, you can
 
 - Text
 - Image
-- Slideshow
-- Phone number (pressing makes a call)
-- Address (pressing opens directions)
-- Email (pressing opens email composer)
-- Map
-- Link
-- Separator
-- Share
-- Custom
+- Slideshow [Coming Soon]
+- Phone number (pressing makes a call)  [Coming Soon]
+- Address (pressing opens directions)  [Coming Soon]
+- Email (pressing opens email composer)  [Coming Soon]
+- Map  [Coming Soon]
+- Link  [Coming Soon]
+- Video  [Coming Soon]
+- Separator  [Coming Soon]
+- Share  [Coming Soon]
+- Custom [Coming Soon]
 
 ## Author
 
