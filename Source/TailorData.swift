@@ -37,11 +37,25 @@ extension Tailor {
   }
 
   struct Data {
-//    let pieces: [Piece]
-//    let styles: [[String : AnyObject]]
+    let pieces: [Piece]
+    let styles: [Style]
 
     init(piecesJSON: [[String : AnyObject]], stylesJSON: [[String : AnyObject]]) {
+      var piecesContainer = [Piece]()
+      var stylesContainer = [Style]()
 
+      for styleJSON in stylesJSON {
+        let style = Style(JSON: styleJSON)
+        stylesContainer.append(style)
+      }
+
+      for pieceJSON in piecesJSON {
+        let piece = Piece(JSON: pieceJSON)
+        piecesContainer.append(piece)
+      }
+
+      pieces = piecesContainer
+      styles = stylesContainer
     }
   }
 }

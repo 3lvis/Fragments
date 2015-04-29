@@ -26,7 +26,7 @@ class Tests: XCTestCase {
     let data = Tailor.Data(
       piecesJSON: piecesJSON,
       stylesJSON: stylesJSON)
-//    XCTAssertEqual(data.pieces.count, 2)
-//    XCTAssertEqual(data.styles.count, 2)
+    XCTAssertEqual(data.pieces.count, 2)
+    XCTAssertEqual(data.styles.count, 2)
   }
 }
