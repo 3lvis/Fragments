@@ -5,13 +5,23 @@ import JSON
 class Tests: XCTestCase {
 
   func testStyle() {
-    let style = Tailor.Style(JSON: ["id" : "text.p", "font" : "Avenir-Light", "font_size" : 14])
+    let style = Tailor.Style(JSON:
+      [
+        "id" : "text.p",
+        "font" : "Avenir-Light",
+        "font_size" : 14
+      ])
     XCTAssertEqual(style.id, "text.p")
     XCTAssertEqual(style.font!, UIFont(name: "Avenir-Light", size: 14)!)
   }
 
   func testPiece() {
-    let piece = Tailor.Piece(JSON: ["type" : "text", "content" : "Hey there", "style_id" : "text.h1"])
+    let piece = Tailor.Piece(JSON:
+      [
+        "type" : "text",
+        "content" : "Hey there",
+        "style_id" : "text.h1"
+      ])
     XCTAssertEqual(piece.content, "Hey there")
     XCTAssertEqual(piece.type, .Text)
     XCTAssertEqual(piece.styleID, "text.h1")
