@@ -28,8 +28,9 @@ class Tests: XCTestCase {
   }
 
   func testDataInitialization() {
-    let piecesJSON = JSON.fromFileNamed("pieces.json", inBundle: NSBundle(forClass: self.classForCoder)) as! [[String : AnyObject]]
-    let stylesJSON = JSON.fromFileNamed("styles.json", inBundle: NSBundle(forClass: self.classForCoder)) as! [[String : AnyObject]]
+    let bundle = NSBundle(forClass: self.classForCoder)
+    let piecesJSON = JSON.fromFileNamed("pieces.json", inBundle: bundle) as! [[String : AnyObject]]
+    let stylesJSON = JSON.fromFileNamed("styles.json", inBundle: bundle) as! [[String : AnyObject]]
     XCTAssertEqual(piecesJSON.count, 2)
     XCTAssertEqual(stylesJSON.count, 2)
 
