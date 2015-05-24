@@ -8,9 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
-//    window?.rootViewController = Tailor(
-//      pieces: JSON.fromFileNamed("pieces.json") as! [[String : AnyObject]],
-//      styles: JSON.fromFileNamed("styles.json") as! [[String : AnyObject]])
+    window?.rootViewController = Tailor()
     window?.makeKeyAndVisible()
 
     return true
