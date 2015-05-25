@@ -11,12 +11,6 @@
 		143AC7611AF00CDE007944E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AC7601AF00CDE007944E4 /* AppDelegate.swift */; };
 		143AC7681AF00CDE007944E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143AC7671AF00CDE007944E4 /* Images.xcassets */; };
 		143DCE7E1AF00F64008C8F91 /* Tailor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AC7561AF00C92007944E4 /* Tailor.swift */; };
-		145E9E1A1AF017890026F8B3 /* pieces.json in Resources */ = {isa = PBXBuildFile; fileRef = 145E9E191AF017890026F8B3 /* pieces.json */; };
-		145E9E1C1AF01F260026F8B3 /* styles.json in Resources */ = {isa = PBXBuildFile; fileRef = 145E9E1B1AF01F260026F8B3 /* styles.json */; };
-		145E9E1E1AF033B40026F8B3 /* TailorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E9E1D1AF033B40026F8B3 /* TailorData.swift */; };
-		145E9E221AF0343D0026F8B3 /* pieces.json in Resources */ = {isa = PBXBuildFile; fileRef = 145E9E201AF0343D0026F8B3 /* pieces.json */; };
-		145E9E231AF0343D0026F8B3 /* styles.json in Resources */ = {isa = PBXBuildFile; fileRef = 145E9E211AF0343D0026F8B3 /* styles.json */; };
-		145E9E241AF034DD0026F8B3 /* TailorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E9E1D1AF033B40026F8B3 /* TailorData.swift */; };
 		14A139B41AEFC72B00AD732F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* Tests.swift */; };
 		80B16B02F5B643E30536E7E1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1873DF7FBAC48A7BD9301D53 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B325A0FBDF6A42A763831444 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1873DF7FBAC48A7BD9301D53 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -28,11 +22,6 @@
 		143AC75F1AF00CDE007944E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		143AC7601AF00CDE007944E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		143AC7671AF00CDE007944E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		145E9E191AF017890026F8B3 /* pieces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pieces.json; sourceTree = "<group>"; };
-		145E9E1B1AF01F260026F8B3 /* styles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = styles.json; sourceTree = "<group>"; };
-		145E9E1D1AF033B40026F8B3 /* TailorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TailorData.swift; sourceTree = "<group>"; };
-		145E9E201AF0343D0026F8B3 /* pieces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pieces.json; sourceTree = "<group>"; };
-		145E9E211AF0343D0026F8B3 /* styles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = styles.json; sourceTree = "<group>"; };
 		146D72AC1AB782920058798C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146D72B11AB782920058798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A139B21AEFC72B00AD732F /* Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -69,8 +58,6 @@
 		143AC75D1AF00CDE007944E4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				145E9E191AF017890026F8B3 /* pieces.json */,
-				145E9E1B1AF01F260026F8B3 /* styles.json */,
 				143AC7601AF00CDE007944E4 /* AppDelegate.swift */,
 				143AC7671AF00CDE007944E4 /* Images.xcassets */,
 				143AC75E1AF00CDE007944E4 /* Supporting Files */,
@@ -84,15 +71,6 @@
 				143AC75F1AF00CDE007944E4 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		145E9E1F1AF0343D0026F8B3 /* JSONs */ = {
-			isa = PBXGroup;
-			children = (
-				145E9E201AF0343D0026F8B3 /* pieces.json */,
-				145E9E211AF0343D0026F8B3 /* styles.json */,
-			);
-			path = JSONs;
 			sourceTree = "<group>";
 		};
 		146D728A1AB782920058798C = {
@@ -122,7 +100,6 @@
 		146D72AF1AB782920058798C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				145E9E1F1AF0343D0026F8B3 /* JSONs */,
 				146D72B01AB782920058798C /* Supporting Files */,
 				14A139B31AEFC72B00AD732F /* Tests.swift */,
 				14A139B21AEFC72B00AD732F /* Tests-Bridging-Header.h */,
@@ -153,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				143AC7561AF00C92007944E4 /* Tailor.swift */,
-				145E9E1D1AF033B40026F8B3 /* TailorData.swift */,
 			);
 			name = Source;
 			path = ../Source;
@@ -260,8 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145E9E1C1AF01F260026F8B3 /* styles.json in Resources */,
-				145E9E1A1AF017890026F8B3 /* pieces.json in Resources */,
 				143AC7681AF00CDE007944E4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,8 +244,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145E9E221AF0343D0026F8B3 /* pieces.json in Resources */,
-				145E9E231AF0343D0026F8B3 /* styles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145E9E1E1AF033B40026F8B3 /* TailorData.swift in Sources */,
 				143DCE7E1AF00F64008C8F91 /* Tailor.swift in Sources */,
 				143AC7611AF00CDE007944E4 /* AppDelegate.swift in Sources */,
 			);
@@ -385,7 +356,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145E9E241AF034DD0026F8B3 /* TailorData.swift in Sources */,
 				143AC7571AF00C92007944E4 /* Tailor.swift in Sources */,
 				14A139B41AEFC72B00AD732F /* Tests.swift in Sources */,
 			);
@@ -407,7 +377,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -423,7 +393,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -463,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -498,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
